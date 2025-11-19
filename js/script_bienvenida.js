@@ -5,8 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return `${nombre} ${apellido}`;
     }
 
-    // Pedir nombre siempre al cargar
-    const nombreCompleto = preguntarNombre();
+    // Revisar si ya hay nombre en la sesión
+    let nombreCompleto = sessionStorage.getItem("nombreCompleto");
+    if (!nombreCompleto) {
+        nombreCompleto = preguntarNombre();
+        sessionStorage.setItem("nombreCompleto", nombreCompleto);
+    }
 
     // Mostrar mensaje de bienvenida
     const mensajeBienvenida = document.getElementById("mensaje-bienvenida");
