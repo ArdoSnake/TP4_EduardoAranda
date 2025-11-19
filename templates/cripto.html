@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Criptomonedas</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+</head>
+<body>
+    <div class="logo">
+    <img src="../statics/images/cripto.png" alt="Logo cripto">
+    </div>
+    <header>
+        <h1>API Criptomonedas - CoinGecko</h1>
+        <p>Selecciona una criptomoneda para ver su información.</p>
+    </header>
+
+    <main>
+        <section class="cripto-form">
+            <select id="moneda">
+                <option value="">-- Selecciona una criptomoneda --</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="cardano">Cardano</option>
+                <option value="dogecoin">Dogecoin</option>
+                <option value="solana">Solana</option>
+                <option value="polkadot">Polkadot</option>
+            </select>
+            <button id="buscarCripto">Buscar</button>
+        </section>
+
+        <section class="cripto-result" id="resultadoCripto">
+            <!-- Aquí aparecerá la información de la criptomoneda -->
+        </section>
+
+        <button onclick="location.href='index.html'">Inicio</button>
+    </main>
+
+    <footer>
+        <p>Proyecto realizado por Eduardo Aranda - 18/11/2025</p>
+    </footer>
+
+    <script src="../js/cripto.js"></script>
+</body>
+</html>

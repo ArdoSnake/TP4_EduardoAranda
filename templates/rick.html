@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rick & Morty</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+</head>
+<body>
+    <div class="logo">
+    <img src="../statics/images/logo-rickapi.png" alt="Logo Rick">
+    </div>
+    <header>
+        <h1>API Rick & Morty</h1>
+        <p>Ingresa el ID de un personaje para ver su información.</p>
+    </header>
+
+    <main>
+        <section class="rick-form">
+            <input type="number" id="personajeId" placeholder="Escribe el ID del personaje" min="1">
+            <button id="buscarRick">Buscar personaje</button>
+        </section>
+
+        <section class="rick-result" id="resultadoRick">
+            <!-- Aquí aparecerá la información del personaje -->
+        </section>
+
+        <button onclick="location.href='index.html'">Inicio</button>
+    </main>
+
+    <footer>
+        <p>Proyecto realizado por Eduardo Aranda - 18/11/2025</p>
+    </footer>
+
+    <script src="../js/rick.js"></script>
+</body>
+</html>

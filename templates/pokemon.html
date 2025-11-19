@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Pokémon</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+</head>
+<body>
+    <div class="logo">
+    <img src="../statics/images/logo-pokemon.png" alt="Logo Pokémon">
+    </div>
+    <header>
+        <h1>API Pokémon - PokéAPI</h1>
+        <p>Ingresa el nombre o ID de un Pokémon para ver su información.</p>
+    </header>
+
+    <main>
+        <section class="pokemon-form">
+            <input type="text" id="pokemon" placeholder="Escribe nombre o ID">
+            <button id="buscarPokemon">Buscar Pokémon</button>
+        </section>
+
+        <section class="pokemon-result" id="resultadoPokemon">
+            <!-- Aquí aparecerá la información del Pokémon -->
+        </section>
+
+        <button onclick="location.href='index.html'">Inicio</button>
+    </main>
+
+    <footer>
+        <p>Proyecto realizado por Eduardo Aranda - 18/11/2025</p>
+    </footer>
+
+    <script src="../js/pokemon.js"></script>
+</body>
+</html>

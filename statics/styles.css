@@ -1,0 +1,236 @@
+/* =======================
+   RESET
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =======================
+   BODY
+======================= */
+body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/* =======================
+   MAIN
+======================= */
+main {
+    text-align: center;
+    width: 100%;
+}
+
+/* =======================
+   BIENVENIDA
+======================= */
+.bienvenida h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* =======================
+   BOTONES
+======================= */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;  /* centra horizontalmente */
+    align-items: center;      /* centra verticalmente */
+    margin: 40px auto;        /* centrado vertical opcional */
+    max-width: 900px;         /* limita ancho total */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* centra contenido dentro del botón */
+    gap: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+}
+
+/* =======================
+   TARJETAS DE RESULTADOS
+======================= */
+.pais-card,
+.pokemon-card,
+.rick-card,
+.cripto-card,
+.clima-card {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    border: 3px solid #333;
+    color: #222; /* mejora contraste del texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pais-card h2,
+.pokemon-card h2,
+.rick-card h2,
+.cripto-card h2,
+.clima-card h2 {
+    color: #111; /* títulos más oscuros */
+    margin-bottom: 15px;
+}
+
+.pais-card p,
+.pokemon-card p,
+.rick-card p,
+.cripto-card p,
+.clima-card p {
+    color: #333; /* párrafos legibles */
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.pais-card:hover,
+.pokemon-card:hover,
+.rick-card:hover,
+.cripto-card:hover,
+.clima-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
+
+.pais-card img,
+.pokemon-card img,
+.rick-card img,
+.cripto-card img,
+.clima-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    margin-bottom: 15px;
+}
+
+/* =======================
+   FORMULARIOS
+======================= */
+input[type="text"],
+input[type="number"],
+select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #333;
+    margin-right: 10px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #4CAF50;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+/* =======================
+   LOGO
+======================= */
+.logo {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente dentro del contenedor */
+    margin-bottom: 30px;     /* separa del contenido de abajo */
+}
+
+.logo img {
+    width: 100px;   /* tamaño del logo */
+    height: 80px;
+}
+
+
+
+/* =======================
+   SECCIONES
+======================= */
+section {
+    margin-bottom: 20px;
+}
+
+/* =======================
+   MEDIA QUERY (RESPONSIVE)
+======================= */
+@media (max-width: 768px) {
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pais-card img,
+    .pokemon-card img,
+    .rick-card img,
+    .cripto-card img,
+    .clima-card img {
+        width: 200px;
+        height: 200px;
+    }
+}

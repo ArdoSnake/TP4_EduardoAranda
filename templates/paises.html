@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Países</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+</head>
+<body>
+    <div class="logo">
+    <img src="../statics/images/paises.png" alt="Logo paises">
+    </div>
+    <header>
+        <h1>API Países - REST Countries</h1>
+        <p>Ingresa el nombre de un país para ver su información.</p>
+    </header>
+
+    <main>
+        <section class="pais-form">
+            <input type="text" id="pais" placeholder="Escribe el nombre del país">
+            <button id="buscarPais">Buscar país</button>
+        </section>
+
+        <section class="pais-result" id="resultadoPais">
+            <!-- Aquí aparecerá la información del país -->
+        </section>
+
+        <button onclick="location.href='index.html'">Inicio</button>
+    </main>
+
+    <footer>
+        <p>Proyecto realizado por Eduardo Aranda - 18/11/2025</p>
+    </footer>
+
+    <script src="../js/paises.js"></script>
+</body>
+</html>
