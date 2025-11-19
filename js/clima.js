@@ -1,6 +1,6 @@
 // RECUERDA: reemplaza "TU_API_KEY" con tu clave de OpenWeather
-const API_KEY = "TU_API_KEY";  
-
+const API_KEY = "2cac7394f9fcc58ca6035f87b25767a7";  
+// El API KEY SE PONEEE AHIIIII Aleluyaaa
 const botonBuscar = document.getElementById("buscar");
 const resultado = document.getElementById("resultado");
 
@@ -14,8 +14,7 @@ botonBuscar.addEventListener("click", () => {
 
     // URL de la API
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric&lang=es`;
-    const API_KEY = "2cac7394f9fcc58ca6035f87b25767a7";
-
+    
     fetch(url)
         .then(response => {
             if (!response.ok) {
